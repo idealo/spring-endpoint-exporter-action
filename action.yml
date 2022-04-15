@@ -1,0 +1,28 @@
+name: 'spring-endpoint-exporter-action'
+description: 'An action for the Spring Endpoint Exporter'
+branding:
+  icon: cpu
+  color: blue
+
+inputs:
+  jar-path:
+    description: 'The jar to export all request mappings from'
+    required: true
+  output-path:
+    description: 'Where to output the result of the exporter'
+    required: true
+  include-filters:
+    description: 'A set of packages to include when scanning for request mappings'
+    required: true
+  exclude-filters:
+    description: 'A set of packages to exclude when scanning for request mappings'
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  env:
+    EXPORTER_JAR_PATH: /github/workspace/${{ inputs.jar-path }}
+    EXPORTER_OUTPUT_PATH: /github/workspace/${{ inputs.output-path }}
+    EXPORTER_INCLUDE_FILTERS: ${{ inputs.include-filters }}
+    EXPORTER_EXCLUDE_FILTERS: ${{ inputs.exclude-filters }}
