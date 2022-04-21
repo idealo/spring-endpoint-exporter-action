@@ -1,6 +1,6 @@
 # Spring Endpoint Exporter Action
 
-This action allows you to use the [spring-endpoint-exporter](https://github.com/orgs/idealo/packages/container/spring-endpoint-exporter) in you github
+This action allows you to use the [spring-endpoint-exporter](https://github.com/idealo/spring-endpoint-exporter) in you github
 workflows.
 
 ## How to use the action?
