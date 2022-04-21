@@ -7,7 +7,7 @@ workflows.
 
 ```yaml
 - name: Export Spring Endpoints
-  uses: idealo/spring-endpoint-exporter-action@v0.1
+  uses: idealo/spring-endpoint-exporter-action@v0.1.1
   with:
     jar-path: ./target/app.jar
     output-path: ./out.json
