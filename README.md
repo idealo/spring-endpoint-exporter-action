@@ -15,13 +15,13 @@ This action allows you to use the [spring-endpoint-exporter](https://github.com/
 
 ## Inputs
 
-| Name              | Description                                                                         | Default value |
-|-------------------|-------------------------------------------------------------------------------------|---------------|
-| `scan-mode`       | The mode the exporter will operate in.                                              | `"JAR"`       |
-| `input-path`      | The jar or directory with class files to scan and export all request mappings from. | `null`        |
-| `output-path`     | Where to output the result of the exporter.                                         | `null`        |
-| `include-filters` | A set of packages to include when scanning for request mappings.                    | `null`        |
-| `exclude-filters` | A set of packages to exclude when scanning for request mappings.                    | `null`        |
+| Name              | Description                                                                         | Default value | Required |
+|-------------------|-------------------------------------------------------------------------------------|---------------|----------|
+| `scan-mode`       | The mode the exporter will operate in.                                              | `"JAR"`       | No       |
+| `input-path`      | The jar or directory with class files to scan and export all request mappings from. | `null`        | Yes      |
+| `output-path`     | Where to output the result of the exporter.                                         | `null`        | Yes      |
+| `include-filters` | A set of packages to include when scanning for request mappings.                    | `null`        | Yes      |
+| `exclude-filters` | A set of packages to exclude when scanning for request mappings.                    | `null`        | No       |
 
 ## How to scan extracted jars or directories?
 
