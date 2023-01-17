@@ -26,6 +26,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
+    EXPORTER_SCAN_MODE: ${{ inputs.scan-mode }}
     EXPORTER_INPUT_PATH: /github/workspace/${{ inputs.input-path }}
     EXPORTER_OUTPUT_PATH: /github/workspace/${{ inputs.output-path }}
     EXPORTER_INCLUDE_FILTERS: ${{ inputs.include-filters }}
