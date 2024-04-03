@@ -6,7 +6,7 @@ This action allows you to use the [spring-endpoint-exporter](https://github.com/
 
 ```yaml
 - name: Export Spring Endpoints
-  uses: idealo/spring-endpoint-exporter-action@v1.0.3
+  uses: idealo/spring-endpoint-exporter-action@v1.0.11
   with:
     input-path: ./target/app.jar
     output-path: ./out.json
@@ -30,7 +30,7 @@ To scan directories, set `scan-mode` to `FILE_SYSTEM` and make sure that `input-
 
 ```yaml
 - name: Export Spring Endpoints
-  uses: idealo/spring-endpoint-exporter-action@v1.0.3
+  uses: idealo/spring-endpoint-exporter-action@v1.0.11
   with:
     scan-mode: FILE_SYSTEM
     input-path: ./target/
